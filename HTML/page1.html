@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача HTML страница1</title>
+</head>
+<body>
+<h1>Кондитерская "Сливки-Щасливки" приветствует вас!</h1>
+<hr/>
+
+<h2>Заполните форму заявки</h2>
+<form action="" method="post">
+    <label>Заказчик:
+        <input type="text" placeholder="Ваше имя" name="clientName"/>
+    </label>
+
+    <label>
+        Номер телефона:
+        <input type="text" placeholder="Телефон" name="clientPhone"/>
+    </label>
+
+    <h3>Информация о заказе:</h3>
+    <label>
+        Какой торт заказываете:
+        <select name="type">
+            <option value="1">Свадебный торт</option>
+            <option value="2">Торт на торжество</option>
+            <option value="3" selected>Просто закинуться сладким</option>
+        </select>
+    </label><br/><br/>
+
+    <label>
+        Выберете виды украшений:
+        <select multiple name="decoration">
+            <option value="1">Обдать шоколадом</option>
+            <option value="2">Сливок побольше</option>
+            <option value="3">Проявить безумный креатив</option>
+            <option value="4">Надпись из карамели</option>
+            <option value="5">Посыпать орешками</option>
+        </select>
+    </label><br/><br/>
+
+    <label>
+        <input type="checkbox" name="carton"/>
+        Упаковать в картонную коробку&nbsp;
+    </label>
+    <label>
+        <input type="checkbox" name="cover"/>
+        Прозрачная крышка&nbsp;
+    </label>
+    <label>
+        <input type="checkbox" name="ribbon"/>
+        Перевязать ленточкой&nbsp;
+    </label>
+    <label>
+        <input type="checkbox" name="postcard"/>
+        Добавить открытку&nbsp;
+    </label>
+
+    <h3>Способ оплаты заказа:</h3>
+    <label>
+        <input checked type="radio" name="payment_method" value="1"/>
+        Перевод на карту
+    </label>
+    <label>
+        <input type="radio" name="payment_method" value="2"/>
+        Курьеру наличными
+    </label>
+    <label>
+        <input type="radio" name="payment_method" value="3"/>
+        Картой курьеру
+    </label><br/><br/>
+    <label>Введите адрес доставки:<br/>
+        <textarea cols="35" rows="5" name="extra"></textarea>
+    </label><br/>
+
+    <button type="submit">Отправить заявку!</button>
+</form>
+<hr/>
+<a href="page2.html">Посмотреть фото тортов и цены!</a>
+</body>
+</html>
